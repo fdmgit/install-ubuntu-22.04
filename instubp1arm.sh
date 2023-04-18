@@ -5,7 +5,6 @@ apt update
 ###################################
 #### Install updated Ubuntu Version
 ###################################
-apt install --install-recommends linux-generic-hwe-20.04 -y 
 
 apt upgrade -y 
 apt install mlocate sntp ntpdate software-properties-common -y 
