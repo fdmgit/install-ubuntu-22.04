@@ -306,7 +306,7 @@ systemctl restart php8.2-fpm.service
 
 
 ##############################
-#### INstall Redis Server
+#### Install Redis Server
 ##############################
 
 echo | add-apt-repository ppa:redislabs/redis
