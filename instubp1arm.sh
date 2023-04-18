@@ -25,6 +25,6 @@ echo "root:$1" | chpasswd   # set root password -
 #### Install Virtualmin
 ##############################
 
-wget -O virtualmin-install_arm.sh https://raw.githubusercontent.com/fdmgit/install-ubuntu/main/virtualmin-install_arm.sh
+wget -O virtualmin-install_arm.sh https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/virtualmin-install_arm.sh
 sh virtualmin-install_arm.sh -y
 reboot
