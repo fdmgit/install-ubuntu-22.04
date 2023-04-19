@@ -7,7 +7,7 @@ apt update
 ###################################
 
 apt upgrade -y 
-apt install sntp ntpdate software-properties-common -y 
+apt install plocate sntp ntpdate software-properties-common -y 
 hostnamectl set-hostname $2
 
 ##############################
