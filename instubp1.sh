@@ -27,4 +27,5 @@ echo "root:$1" | chpasswd   # set root password -
 
 wget -O virtualmin-install.sh https://raw.githubusercontent.com/virtualmin/virtualmin-install/master/virtualmin-install.sh
 sh virtualmin-install.sh -y
+rm virtualmin-install.sh
 reboot
