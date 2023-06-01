@@ -335,6 +335,14 @@ vm.overcommit_memory = 1
 
 EOF
 
+
+##############################
+#### Update programs
+##############################
+apt update
+apt upgrade -y
+
+
 ##############################
 #### Update locate DB
 ##############################
