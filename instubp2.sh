@@ -312,10 +312,11 @@ systemctl restart php8.2-fpm.service
 echo | add-apt-repository ppa:deadsnakes/ppa -y
 apt update
 apt install python3.11-full -y
+apt install python3-pip -y
 apt install python3.11-venv -y
 echo | update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
-echo | update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 2
-echo 2 > update-alternatives --config python3
+echo | update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
+echo 2 | update-alternatives --config python3
 
 
 ##############################
