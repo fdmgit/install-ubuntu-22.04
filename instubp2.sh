@@ -309,12 +309,12 @@ systemctl restart php8.2-fpm.service
 #### install new Python versions
 ################################
 
-add-apt-repository ppa:deadsnakes/ppa -y
+echo | add-apt-repository ppa:deadsnakes/ppa -y
 apt update
-apt install python3.11 -y
+apt install python3.11-full -y
 apt install python3.11-venv -y
-update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
-update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 2
+echo | update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
+echo | update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 2
 echo 2 > update-alternatives --config python3
 
 
