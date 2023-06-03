@@ -349,6 +349,17 @@ rm server-level.tar.gz
 
 cd /root
 
+###################################
+#### new fail2ban jail
+###################################
+
+wget https://raw.githubusercontent.com/fdmgit/virtualmin/main/jail.local
+cd /etc/fail2ban
+mv jail.local jail.local.orig
+cp /root/jail.local jail.local
+rm /root/jail.local
+
+cd /root
 
 ##############################
 #### Update programs
