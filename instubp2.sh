@@ -336,6 +336,17 @@ vm.overcommit_memory = 1
 
 EOF
 
+###################################
+#### add config files to Virtualmin
+###################################
+
+cd /etc/webmin/virtual-server/plans
+wget https://github.com/fdmgit/virtualmin/blob/main/160880314564582.ini
+cd /etc/webmin/virtual-server/templates
+wget https://github.com/fdmgit/virtualmin/blob/main/server-level.tar.gz
+tar -xvzf server-level.tar.gz
+rm server-level.tar.gz
+
 
 ##############################
 #### Update programs
