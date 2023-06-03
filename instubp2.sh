@@ -353,11 +353,14 @@ cd /root
 #### new fail2ban jail
 ###################################
 
+wget https://github.com/fail2ban/fail2ban/releases/download/1.0.2/fail2ban_1.0.2-1.upstream1_all.deb
+echo y | dpkg -i fail2ban_1.0.2-1.upstream1_all.deb -y
 wget https://raw.githubusercontent.com/fdmgit/virtualmin/main/jail.local
 cd /etc/fail2ban
 mv jail.local jail.local.orig
 cp /root/jail.local jail.local
 rm /root/jail.local
+rm /root/fail2ban_1.0.2-1.upstream1_all.deb
 
 cd /root
 
