@@ -5,7 +5,6 @@ wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/instubp1
 wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/instubp2.sh
 
 cp bashrc.ini /root/.bashrc
-echo | source .bashrc
 rm /root/bashrc.ini
 
 chmod +x /root/instubp1.sh
