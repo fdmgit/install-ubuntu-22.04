@@ -15,7 +15,7 @@ hostnamectl set-hostname $2
 ####################################
 
 cd /usr/local/bin
-wget 
+wget  gat_Linux_x86_64.tar.gz
 
 
 
