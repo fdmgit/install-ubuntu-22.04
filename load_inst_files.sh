@@ -1,11 +1,8 @@
 #!/bin/bash
 
-wget https://github.com/fdmgit/install-ubuntu-22.04/blob/main/bashrc.ini
-wget https://github.com/fdmgit/install-ubuntu-22.04/blob/main/instubp1.sh
-wget https://github.com/fdmgit/install-ubuntu-22.04/blob/main/instubp2.sh
-#wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/bashrc.ini
-#wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/instubp1.sh
-#wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/instubp2.sh
+wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/bashrc.ini
+wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/instubp1.sh
+wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/instubp2.sh
 
 cp bashrc.ini /root/.bashrc
 source .bashrc
