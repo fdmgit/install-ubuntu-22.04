@@ -15,8 +15,13 @@ hostnamectl set-hostname $2
 ####################################
 
 cd /usr/local/bin
-wget  gat_Linux_x86_64.tar.gz
-
+wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/gat_Linux_x86_64.tar.gz
+tar -xvzf gat_Linux_x86_64.tar.gz
+chown root:root gat
+chmod +x gat
+rm gat_Linux_x86_64.tar.gz
+rm LICENSE
+rm README.md
 
 
 apt update 
