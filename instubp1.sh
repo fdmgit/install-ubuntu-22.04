@@ -23,6 +23,7 @@ rm gat_Linux_x86_64.tar.gz
 rm LICENSE
 rm README.md
 
+cd /root
 
 apt update 
 #passwd root
