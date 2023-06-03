@@ -347,6 +347,8 @@ wget https://github.com/fdmgit/virtualmin/blob/main/server-level.tar.gz
 tar -xvzf server-level.tar.gz
 rm server-level.tar.gz
 
+cd /root
+
 
 ##############################
 #### Update programs
