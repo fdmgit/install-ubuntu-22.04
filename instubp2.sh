@@ -341,9 +341,9 @@ EOF
 ###################################
 
 cd /etc/webmin/virtual-server/plans
-wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/160880314564582.ini
+wget https://raw.githubusercontent.com/fdmgit/virtualmin/main/160880314564582.ini
 cd /etc/webmin/virtual-server/templates
-wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/server-level.tar.gz
+wget https://raw.githubusercontent.com/fdmgit/virtualmin/main/server-level.tar.gz
 tar -xvzf server-level.tar.gz
 rm server-level.tar.gz
 
