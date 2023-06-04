@@ -317,6 +317,10 @@ systemctl restart php8.2-fpm.service
 #echo | update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
 #echo 2 | update-alternatives --config python3
 #apt install python3-pip -y
+#cd /root
+#wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/messages.py
+#cp messages.py /usr/lib/python3/dist-packages/acme/messages.py
+#rm messages.py
 #echo | ln -s /usr/lib/python3/dist-packages/apt_pkg.cpython-310-x86_64-linux-gnu.so /usr/lib/python3/dist-packages/apt_pkg.so
 
 
