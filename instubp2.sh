@@ -363,6 +363,22 @@ rm logo_welcome.png
 rm styles.css
 rm logostyle.zip
 
+###################################
+#### left menu html
+###################################
+
+all_ip_addresses="$(hostname -I)";
+ip_address_array=($all_ip_addresses);
+
+local_host="$(hostname -s)";
+local_host=${local_host^^};
+
+leftmenu_user_html="<br /><kb><b><span style='font-size:20px;color:gold;'>""$local_host""</span></b></kb><br /><kb><span style='font-size:16px;color:gold;'>""${ip_address_array[0]>
+leftmenu_user_html="settings_leftmenu_user_html='""$leftmenu_user_html""';";
+
+sed -i "s|settings_leftmenu_user_html='';|$leftmenu_user_html|g" /etc/webmin/authentic-theme/settings-root.js
+
+
 cd /root
 
 
