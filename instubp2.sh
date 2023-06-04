@@ -371,7 +371,7 @@ cd /root
 ###################################
 
 wget https://github.com/fail2ban/fail2ban/releases/download/1.0.2/fail2ban_1.0.2-1.upstream1_all.deb
-echo y | dpkg -i fail2ban_1.0.2-1.upstream1_all.deb -y
+echo y | dpkg -i fail2ban_1.0.2-1.upstream1_all.deb
 wget https://raw.githubusercontent.com/fdmgit/virtualmin/main/jail.local
 cd /etc/fail2ban
 mv jail.local jail.local.orig
