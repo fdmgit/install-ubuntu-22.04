@@ -317,6 +317,7 @@ systemctl restart php8.2-fpm.service
 #echo | update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
 #echo 2 | update-alternatives --config python3
 #apt install python3-pip -y
+#pip3 install cffi
 #echo | ln -s /usr/lib/python3/dist-packages/apt_pkg.cpython-310-x86_64-linux-gnu.so /usr/lib/python3/dist-packages/apt_pkg.so
 
 
