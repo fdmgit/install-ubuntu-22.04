@@ -309,7 +309,7 @@ systemctl restart php8.2-fpm.service
 #### install new Python versions  (issuse still investigating!!
 ################################
 
-#: <<'END'
+: <<'END'
 echo | add-apt-repository ppa:deadsnakes/ppa -y
 apt update
 apt install python3.11 -y
@@ -323,14 +323,14 @@ wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/messages
 cp messages.py /usr/lib/python3/dist-packages/acme/messages.py
 rm messages.py
 echo | ln -s /usr/lib/python3/dist-packages/apt_pkg.cpython-310-aarch64-linux-gnu.so /usr/lib/python3/dist-packages/apt_pkg.so
-#END
+END
 
 ######################################
 #### install additional Python modules
 ######################################
 
-#apt install python3-venv -y
-#apt install python3-pip -y
+apt install python3-venv -y
+apt install python3-pip -y
 
 cd /root
 
