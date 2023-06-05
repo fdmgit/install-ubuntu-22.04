@@ -309,19 +309,21 @@ systemctl restart php8.2-fpm.service
 #### install new Python versions  (issuse still investigating!!
 ################################
 
-#echo | add-apt-repository ppa:deadsnakes/ppa -y
-#apt update
-#apt install python3.11 -y
-#apt install python3.11-venv -y
-#echo | update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
-#echo | update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
-#echo 2 | update-alternatives --config python3
-#apt install python3-pip -y
-#cd /root
-#wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/messages.py
-#cp messages.py /usr/lib/python3/dist-packages/acme/messages.py
-#rm messages.py
-#echo | ln -s /usr/lib/python3/dist-packages/apt_pkg.cpython-310-arm64-linux-gnu.so /usr/lib/python3/dist-packages/apt_pkg.so
+: <<'END'
+echo | add-apt-repository ppa:deadsnakes/ppa -y
+apt update
+apt install python3.11 -y
+apt install python3.11-venv -y
+echo | update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
+echo | update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
+echo 2 | update-alternatives --config python3
+apt install python3-pip -y
+cd /root
+wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/messages.py
+cp messages.py /usr/lib/python3/dist-packages/acme/messages.py
+rm messages.py
+echo | ln -s /usr/lib/python3/dist-packages/apt_pkg.cpython-310-arm64-linux-gnu.so /usr/lib/python3/dist-packages/apt_pkg.so
+END
 
 ######################################
 #### install additional Python modules
