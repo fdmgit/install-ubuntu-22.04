@@ -321,7 +321,7 @@ systemctl restart php8.2-fpm.service
 #wget https://raw.githubusercontent.com/fdmgit/install-ubuntu-22.04/main/messages.py
 #cp messages.py /usr/lib/python3/dist-packages/acme/messages.py
 #rm messages.py
-#echo | ln -s /usr/lib/python3/dist-packages/apt_pkg.cpython-310-x86_64-linux-gnu.so /usr/lib/python3/dist-packages/apt_pkg.so
+#echo | ln -s /usr/lib/python3/dist-packages/apt_pkg.cpython-310-arm64-linux-gnu.so /usr/lib/python3/dist-packages/apt_pkg.so
 
 ######################################
 #### install additional Python modules
