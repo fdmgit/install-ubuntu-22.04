@@ -304,9 +304,8 @@ systemctl restart php8.0-fpm.service
 systemctl restart php8.1-fpm.service
 systemctl restart php8.2-fpm.service
 
-
 ################################
-#### install new Python versions
+#### install new Python versions  (issuse still investigating!!
 ################################
 
 #echo | add-apt-repository ppa:deadsnakes/ppa -y
@@ -322,6 +321,15 @@ systemctl restart php8.2-fpm.service
 #cp messages.py /usr/lib/python3/dist-packages/acme/messages.py
 #rm messages.py
 #echo | ln -s /usr/lib/python3/dist-packages/apt_pkg.cpython-310-x86_64-linux-gnu.so /usr/lib/python3/dist-packages/apt_pkg.so
+
+######################################
+#### install additional Python modules
+######################################
+
+apt install python3-venv -y
+apt install python3-pip -y
+
+cd /root
 
 
 ##############################
