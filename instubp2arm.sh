@@ -378,6 +378,14 @@ rm logo_welcome.png
 rm styles.css
 rm logostyle.zip
 
+cd /root
+
+wget https://raw.githubusercontent.com/fdmgit/virtualmin/main/settings.js
+wget https://raw.githubusercontent.com/fdmgit/virtualmin/main/settings-root.js
+cp settings.js /etc/webmin/authentic-theme/
+cp settings-root.js /etc/webmin/authentic-theme/
+
+
 ###################################
 #### left menu html
 ###################################
