@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Installation script mainly for Virtualmin
+
 apt update
 
 ###################################
