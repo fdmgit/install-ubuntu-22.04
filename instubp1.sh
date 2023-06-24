@@ -12,6 +12,12 @@ apt upgrade -y
 apt install plocate sntp ntpdate software-properties-common -y 
 hostnamectl set-hostname $2
 
+cd /root
+
+apt update 
+#passwd root
+echo "root:$1" | chpasswd   # set root password -
+
 ####################################
 #### Install gat (alternative to cat
 ####################################
@@ -25,11 +31,26 @@ rm gat_Linux_x86_64.tar.gz
 rm LICENSE
 rm README.md
 
-cd /root
+###################################
+#### Add joshuto (cli filemanager)
+###################################
 
-apt update 
-#passwd root
-echo "root:$1" | chpasswd   # set root password -
+cd /usr/local/bin
+wget https://github.com/kamiyaa/joshuto/releases/download/v0.9.4/joshuto-v0.9.4-x86_64-unknown-linux-gnu.tar.gz
+tar -xvzf joshuto-v0.9.4-x86_64-unknown-linux-gnu.tar.gz
+chown root:root joshuto
+chmod +x joshuto
+rm joshuto-v0.9.4-x86_64-unknown-linux-gnu.tar.gz
+
+
+###################################
+#### Build aliases file
+###################################
+
+cd /root
+mkdir .bash_aliases
+echo "alias jos='joshuto'" >> .bash_aliases
+echo "alias gc='gat'" >> .bash_aliases
 
 
 ##############################
