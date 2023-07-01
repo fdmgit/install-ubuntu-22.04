@@ -37,6 +37,7 @@ rm README.md
 
 cd /usr/local/bin
 wget https://github.com/kamiyaa/joshuto/releases/download/v0.9.4/joshuto-v0.9.4-x86_64-unknown-linux-gnu.tar.gz
+tar -vxzf joshuto-v0.9.4-x86_64-unknown-linux-gnu.tar.gz -C /usr/local/bin  --strip-components=1
 tar -xvzf joshuto-v0.9.4-x86_64-unknown-linux-gnu.tar.gz
 chown root:root joshuto
 chmod +x joshuto
@@ -48,7 +49,7 @@ rm joshuto-v0.9.4-x86_64-unknown-linux-gnu.tar.gz
 ###################################
 
 cd /root
-mkdir .bash_aliases
+touch .bash_aliases
 echo "alias jos='joshuto'" >> .bash_aliases
 echo "alias gc='gat'" >> .bash_aliases
 
