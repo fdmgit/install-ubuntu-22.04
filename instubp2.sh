@@ -429,5 +429,11 @@ updatedb
 
 apt autoremove -y # clean installed apps
 
+
+cd /root
+rm instubp1.sh
+rm instubp2.sh
+rm load_inst_files.sh
+
 reboot
 
