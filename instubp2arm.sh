@@ -437,4 +437,9 @@ updatedb
 
 apt autoremove -y # clean installed apps
 
+cd /root
+rm instubp1arm.sh
+rm instubp2arm.sh
+rm load_inst_files_arm.sh
+
 reboot
