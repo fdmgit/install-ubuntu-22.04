@@ -9,7 +9,8 @@ apt update
 ###################################
 
 apt upgrade -y 
-apt install plocate sntp ntpdate software-properties-common -y 
+apt install plocate sntp ntpdate software-properties-common -y
+timedatectl set-timezone Europe/Zurich
 hostnamectl set-hostname $2
 
 cd /root
