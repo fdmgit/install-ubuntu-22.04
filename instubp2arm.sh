@@ -443,5 +443,6 @@ cd /root
 rm instubp1arm.sh
 rm instubp2arm.sh
 rm load_inst_files_arm.sh
+rm -R .spamassassin
 
 reboot
