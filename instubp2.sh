@@ -436,6 +436,7 @@ cd /root
 rm instubp1.sh
 rm instubp2.sh
 rm load_inst_files.sh
+rm -R .spamassassin
 
 reboot
 
